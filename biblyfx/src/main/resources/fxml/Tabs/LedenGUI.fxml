@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="LedenGUI" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="373.0" prefWidth="974.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.LedenController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="373.0" prefWidth="320.0">
+      <children>
+        <Label fx:id="lblVervaldatum" layoutX="172.0" layoutY="227.0" text="" />
+        <Label layoutX="80.0" layoutY="227.0" text="Vervaldatum:" />
+        <Label fx:id="lblNaam" layoutX="172.0" layoutY="117.0" text="" />
+        <Label fx:id="lblSchuld" layoutX="172.0" layoutY="189.0" text="" />
+        <Label layoutX="80.0" layoutY="189.0" text="Schuld:" />
+        <Label fx:id="lblVoornaam" layoutX="172.0" layoutY="152.0" text="" />
+        <TextField id="Lidnummer" fx:id="txtLidnummer" layoutX="79.0" layoutY="66.0" onAction="#initialize" prefWidth="174.0" />
+        <Label layoutX="80.0" layoutY="152.0" text="Voornaam:" />
+        <Label layoutX="79.0" layoutY="45.0" text="Lidnummer:" />
+        <Label layoutX="80.0" layoutY="117.0" text="Naam:" />
+        <Button id="btn" fx:id="btnNieuw" layoutX="80.0" layoutY="321.0" mnemonicParsing="false" onAction="#showNieuwLidAanmaken" text="Nieuw lid" />
+        <Button fx:id="btnZoek" layoutX="165.0" layoutY="321.0" mnemonicParsing="false" onAction="#initialize" text="Lid zoeken" />
+      </children>
+    </Pane>
+    <Button id="beheerKnop" fx:id="btnBetaal" layoutX="395.0" layoutY="125.0" mnemonicParsing="false" prefHeight="92.9609375" prefWidth="135.0" text="Betalen" />
+    <Button id="beheerKnop" fx:id="btnAanpassen" layoutX="584.0" layoutY="125.0" mnemonicParsing="false" onAction="#showAanpassenLid" prefHeight="92.9609375" prefWidth="135.0" text="Lid Aanpassen" />
+    <Button id="beheerKnop" fx:id="btnVerwijderen" layoutX="774.0" layoutY="125.0" mnemonicParsing="false" onAction="#verwijderLid" prefHeight="92.99990000000253" prefWidth="134.9998779296875" text="Lid Verwijderen" />
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

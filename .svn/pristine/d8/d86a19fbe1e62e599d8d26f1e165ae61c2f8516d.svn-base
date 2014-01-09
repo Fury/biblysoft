@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="973.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.BeheerPersoneelAanpassenController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="321.9999694824219" layoutX="247.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" styleClass="achtergrond" width="479.0000915527344" />
+    <Label id="textGeboortedatum" layoutX="321.0" layoutY="161.0" prefHeight="17.0" prefWidth="102.0" text="Geboortedatum:" />
+    <Label layoutX="321.0" layoutY="47.0" prefHeight="17.0" prefWidth="108.0" text="Gebruikersnaam:" />
+    <Label layoutX="321.0" layoutY="73.0" prefHeight="17.0" prefWidth="82.0" text="Wachtwoord:" />
+    <Label layoutX="321.0" layoutY="100.0" prefHeight="17.0" prefWidth="132.0" text="Herhaal wachtwoord:" />
+    <Button id="btnAanmaken" layoutX="321.0" layoutY="305.0" mnemonicParsing="false" onAction="#aanpassingenOpslaan" prefWidth="89.0" text="Aanpassen" />
+    <Button id="btnAnnuleren" layoutX="537.0" layoutY="305.0" mnemonicParsing="false" onAction="#goBack" text="Annuleren" />
+    <TextField fx:id="textUsername" layoutX="464.0" layoutY="42.0" prefWidth="232.0" />
+    <RadioButton fx:id="radioButtonAdmin" layoutX="323.0" layoutY="132.0" mnemonicParsing="false" text="Administrator" />
+    <RadioButton fx:id="radioButtonBibliothecaris" layoutX="482.0" layoutY="132.0" mnemonicParsing="false" text="Bibliothecaris" />
+    <Label layoutX="321.0" layoutY="188.0" prefHeight="17.0" prefWidth="102.0" text="Straat:" />
+    <Label layoutX="321.0" layoutY="216.0" prefHeight="17.0" prefWidth="118.0" text="Huisnummer:" />
+    <Label layoutX="321.0" layoutY="241.0" prefHeight="17.0" prefWidth="118.0" text="Gemeente" />
+    <Label layoutX="321.0" layoutY="268.0" prefHeight="17.0" prefWidth="84.0" text="Postcode" />
+    <TextField id="txtStraat" fx:id="textStraat" layoutX="464.0" layoutY="185.0" prefWidth="232.0" />
+    <TextField id="txtGemmente" fx:id="textGemeente" layoutX="464.0" layoutY="237.0" prefWidth="232.0" />
+    <TextField id="txtHuisnummer" fx:id="textHuisnr" layoutX="464.0" layoutY="211.0" prefWidth="102.0" />
+    <TextField id="txtPostcode" fx:id="textPostcode" layoutX="464.0" layoutY="263.0" prefWidth="232.0" />
+    <Label layoutX="572.0" layoutY="211.0" prefHeight="21.0" prefWidth="40.0" text="Bus:" />
+    <TextField id="txtBus" fx:id="textBus" layoutX="612.0" layoutY="210.0" prefWidth="84.0" />
+    <PasswordField fx:id="textPwControle" layoutX="464.0" layoutY="95.0" prefWidth="232.0" />
+    <PasswordField fx:id="textPw" layoutX="464.0" layoutY="68.0" prefWidth="232.0" />
+    <HBox fx:id="hboxGeboortedatum" layoutX="464.0" layoutY="158.0" prefHeight="22.0" prefWidth="232.0" />
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

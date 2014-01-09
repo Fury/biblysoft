@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<BorderPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.StageController">
+    <bottom>
+        <Pane maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0"
+              prefHeight="45.0" prefWidth="974.0" styleClass="footer">
+            <Label fx:id="loginNaam" layoutX="14.0" layoutY="5.0"
+                   styleClass="labelStage" text="naam"/>
+            <Label fx:id="loginFunctie" layoutX="14.0" layoutY="23.0"
+                   prefWidth="150" styleClass="labelStage" text="functie"/>
+            <stylesheets>
+                <URL value="@../styles/styles.css"/>
+            </stylesheets>
+            <Button fx:id="sluiten" layoutX="881.0" layoutY="13.0"
+                    mnemonicParsing="false" onAction="#sluiten" text="Sluiten"/>
+            <Button id="sluiten" layoutX="779.0" layoutY="13.0"
+                    mnemonicParsing="false" onAction="#uitloggen" text="Uitloggen"/>
+        </Pane>
+    </bottom>
+    <center>
+        <TabPane id="tabPane" maxHeight="-1.0" maxWidth="-1.0"
+                 minHeight="-1.0" minWidth="-1.0" prefHeight="395.0" prefWidth="974.0"
+                 tabClosingPolicy="UNAVAILABLE" tabMaxHeight="30.0" tabMaxWidth="144.0"
+                 tabMinHeight="30.0" tabMinWidth="144.0">
+            <tabs>
+                <Tab fx:id="zoekGUI" text="Zoek">
+                    <StackPane fx:id="zoekStackPane">
+                        <fx:include fx:id="zoekTabContent" source="Tabs/ZoekGUI.fxml"/>
+                    </StackPane>
+                </Tab>
+                <Tab fx:id="incheckGUI" text="Inchecken">
+                    <StackPane fx:id="incheckStackPane">
+                        <fx:include fx:id="incheckGuiTab" source="Tabs/IncheckGUI.fxml"/>
+                    </StackPane>
+                </Tab>
+                <Tab fx:id="uitleenGUI" text="Uitlenen">
+                    <StackPane fx:id="uitleenStackPane">
+                        <fx:include fx:id="UitleenGuiTab" source="Tabs/UitleenGUI.fxml"/>
+                    </StackPane>
+                </Tab>
+                <Tab fx:id="ledenGUI" text="Leden">
+                    <StackPane fx:id="ledenStackPane">
+                        <fx:include fx:id="ledenGuiTab" source="Tabs/LedenGUI.fxml"/>
+                    </StackPane>
+                </Tab>
+                <Tab fx:id="hurenGUI" text="Verhuur">
+                    <StackPane fx:id="hurenStackPane">
+                        <fx:include source="Tabs/HurenGUI.fxml"/>
+                    </StackPane>
+                </Tab>
+                <Tab fx:id="beheerGUI" text="Beheer">
+                    <StackPane fx:id="beheerStackPane">
+                        <fx:include fx:id="beheerGuiTab" source="Tabs/BeheerGUI.fxml"/>
+                    </StackPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+    <stylesheets>
+        <URL value="@../styles/styles.css"/>
+    </stylesheets>
+    <top>
+        <Pane maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0"
+              prefHeight="85.0" prefWidth="974.0" styleClass="topHeader">
+            <ImageView id="Logo Bibly.png" fitHeight="80.0" fitWidth="158.0"
+                       layoutX="408.0" layoutY="3.0">
+                <image>
+                    <Image url="/images/logoBibly.png" preserveRatio="true"
+                           smooth="true"/>
+                </image>
+            </ImageView>
+            <Label fx:id="systeemTijd" alignment="CENTER_RIGHT"
+                   contentDisplay="RIGHT" layoutX="720.0" layoutY="31.0" prefWidth="240.0"
+                   styleClass="labelStage" text="" textAlignment="RIGHT"/>
+            <Label fx:id="sysDate" alignment="CENTER_RIGHT" contentDisplay="RIGHT"
+                   layoutX="720.0" layoutY="52.0" prefWidth="240.0" styleClass="labelStage"
+                   text="" textAlignment="RIGHT"/>
+            <stylesheets>
+                <URL value="@../styles/styles.css"/>
+            </stylesheets>
+            <Label id="systeemTijd" alignment="CENTER_LEFT" contentDisplay="RIGHT"
+                   layoutX="15.0" layoutY="31.0" prefWidth="240.0" styleClass="labelStage"
+                   text="Ontworpen door:" textAlignment="RIGHT"/>
+            <Label id="sysDate" alignment="CENTER_LEFT" contentDisplay="LEFT"
+                   layoutX="15.0" layoutY="52.0" prefWidth="240.0" styleClass="labelStage"
+                   text="Bibly Solution Groep C" textAlignment="RIGHT"/>
+        </Pane>
+    </top>
+</BorderPane>

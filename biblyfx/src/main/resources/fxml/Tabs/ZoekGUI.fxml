@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="373.0" prefWidth="974.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.items.ZoekController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="231.0" layoutX="231.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" styleClass="Vierkant" width="526.0" />
+    <Pane layoutX="-3.0" layoutY="0.0" prefHeight="381.0" prefWidth="981.0">
+      <children>
+        <Button id="beheerKnop" fx:id="btnZoekBoek" layoutX="252.0" layoutY="144.0" mnemonicParsing="false" onAction="#showBoekZoeken" prefHeight="92.9609375" prefWidth="135.0" text="Zoek Boek" />
+        <Button fx:id="btnZoekCD" layoutX="423.0" layoutY="144.0" mnemonicParsing="false" onAction="#showCDZoeken" prefHeight="92.9609375" prefWidth="135.0" text="Zoek CD" />
+        <Button fx:id="btnZoekDVD" layoutX="594.0" layoutY="144.0" mnemonicParsing="false" onAction="#showDVDZoeken" prefHeight="92.9609375" prefWidth="135.0" text="Zoek DVD" textAlignment="CENTER" wrapText="true" />
+      </children>
+      <stylesheets>
+        <URL value="@../../styles/styles.css" />
+      </stylesheets>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

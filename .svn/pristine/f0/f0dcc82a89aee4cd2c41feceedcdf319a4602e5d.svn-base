@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import java.net.URL?>
+<BorderPane id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0"
+            prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <center>
+
+        <StackPane fx:id="logInStackPane">
+            <fx:include id="logIn" source="LogIn.fxml" maxHeight="-Infinity"
+                        maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        prefHeight="533.0" prefWidth="972.0"/>
+            <stylesheets>
+                <URL value="@../styles/styles.css"/>
+            </stylesheets>
+        </StackPane>
+    </center>
+
+</BorderPane>

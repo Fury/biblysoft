@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="373.0" prefWidth="973.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.BeheerPersoneelController">
+  <children>
+    <Pane layoutX="48.0" layoutY="70.0" prefHeight="234.0" prefWidth="319.0">
+      <children>
+        <Label layoutX="42.0" layoutY="54.0" text="Gebruikersnaam:" />
+        <Label layoutX="42.0" layoutY="104.0" text="Aanmaakdatum:" />
+        <Label layoutX="42.0" layoutY="130.0" text="Permissie:" />
+        <TextField fx:id="txtGebruikersnaam" layoutX="42.0" layoutY="74.0" prefWidth="258.0" />
+        <Label id="txtAanmaakdatum" fx:id="lblAanmaakdatum" layoutX="162.0" layoutY="104.0" text="" />
+        <Label fx:id="lblPermissie" layoutX="162.0" layoutY="130.0" text="" />
+        <Button fx:id="btnZoek" layoutX="42.0" layoutY="163.0" mnemonicParsing="false" onAction="#zoekGebruiker" text="Zoeken" />
+      </children>
+    </Pane>
+    <Button id="btnTieviegen" fx:id="btnToevoegen" layoutX="573.0" layoutY="128.0" mnemonicParsing="false" onAction="#showAanmaken" prefHeight="92.0" prefWidth="136.0" text="Nieuw personeelslid toevoegen" textAlignment="CENTER" wrapText="true" />
+    <Button fx:id="btnVerwijderen" layoutX="725.0" layoutY="128.0" mnemonicParsing="false" onAction="#verwijderPersoneel" prefHeight="92.0" prefWidth="136.0" text="Personeelslid verwijderen" textAlignment="CENTER" wrapText="true" />
+    <Button fx:id="btnSluiten" layoutX="917.0" layoutY="17.0" mnemonicParsing="false" onAction="#goBack" prefWidth="34.0" text="X" />
+    <Button fx:id="btnAanpassen" layoutX="419.0" layoutY="128.0" mnemonicParsing="false" onAction="#showAanpassen" prefHeight="92.0" prefWidth="136.0" text="Personeelslid aanpassen" textAlignment="CENTER" wrapText="true" />
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

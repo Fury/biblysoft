@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="AnchorPane" blendMode="SRC_OVER" opacity="1.0" prefHeight="360.0" prefWidth="820.0" styleClass="transparant" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.items.CdDetailsOverlayController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="SRC_OVER" fill="WHITE" height="265.0" layoutX="250.0" layoutY="47.5" stroke="BLACK" strokeType="INSIDE" width="542.0" />
+    <Label layoutX="325.0" layoutY="95.0" text="Titel:" />
+    <Label layoutX="325.0" layoutY="121.0" text="Auteur:" />
+    <Label id="lblPrijs" layoutX="325.0" layoutY="262.0" text="Prijs:" />
+    <Label layoutX="325.0" layoutY="180.0" text="Uitgever:" />
+    <Label layoutX="325.0" layoutY="208.0" text="Genre:" />
+    <Label layoutX="325.0" layoutY="235.0" text="Jaar van uitgave:" />
+    <Label layoutX="325.0" layoutY="151.0" text="Taal:" />
+    <ImageView fitHeight="200.00003051757812" fitWidth="153.84617286251253" layoutX="193.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+    <Button id="btnTerug" fx:id="btnSluiten" layoutX="764.0" layoutY="45.0" minWidth="26.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="28.0" text="X" />
+    <Label fx:id="lblTitel" layoutX="444.0" layoutY="95.0" prefWidth="300.0" text="" wrapText="true" />
+    <Label fx:id="lblAuteur" layoutX="444.0" layoutY="121.0" prefWidth="300.0" text="" wrapText="true" />
+    <Label id="lblISBN" fx:id="lblPrijs" layoutX="444.0" layoutY="259.0" prefWidth="268.0" text="" wrapText="true" />
+    <Label fx:id="lblUitgever" layoutX="444.0" layoutY="180.0" text="" wrapText="true" />
+    <Label fx:id="lblGenre" layoutX="444.0" layoutY="208.0" text="" wrapText="true" />
+    <Label fx:id="lblJaar" layoutX="444.0" layoutY="235.0" text="" wrapText="true" />
+    <Label id="lblOrigineel" fx:id="lblTaal" layoutX="444.0" layoutY="151.0" prefWidth="39.0" text="" wrapText="true" />
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

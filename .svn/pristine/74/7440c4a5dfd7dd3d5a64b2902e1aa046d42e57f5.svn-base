@@ -1,0 +1,107 @@
+#rootPane {
+    -fx-background-image: url("../images/background.jpg");
+}
+
+#stage {
+    -fx-effect: dropshadow(three-pass-box, black, 5.0, 0.0, 2.0, 2.0);
+}
+
+.topHeader {
+
+    -fx-background-color: linear-gradient(#FFEEBB, #DDCCAA);
+
+}
+
+.achtergrond {
+    -fx-background-color: #EEEEDD;
+}
+
+.footer {
+    -fx-background-color: linear-gradient(#CCCC88, #AAAA66);
+
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14.0;
+    -fx-text-fill: #661100;
+}
+
+.table {
+
+    -fx-background-color: #EEEEDD;
+
+}
+
+.column-header-background {
+    -fx-background-color: #EEEEDD;
+    -fx-border-color: #661100;
+    -fx-border-width: 0.0px 0.0px 1.0px 0.0px 0.0px;
+}
+
+.column-header {
+
+    -fx-background-color: #EEEEDD;
+    -fx-border-color: #661100;
+    -fx-border-width: 0.0px 0.0px 0px 0.0px 0.0px;
+
+}
+
+.tab:top:hover {
+    -fx-background-color: #DDCCAA;
+}
+
+.tab:top:selected {
+    -fx-background-radius: 0.0px 0.0px 0.0px 0.0px;
+    -fx-background-color: #EEEEDD;
+}
+
+.tab:top {
+    -fx-background-radius: 0.0px 0.0px 0.0px 0.0px;
+    -fx-background-color: linear-gradient(#CCCC88, #AAAA66);
+
+}
+
+.tab-header-area {
+    -fx-background-radius: 0.0px 0.0px 0.0px 0.0px;
+    -fx-background-color: linear-gradient(#CCCC88, #AAAA66);
+}
+
+.tab-header-background {
+    -fx-background-radius: 0.0px 0.0px 0.0px 0.0px;
+    -fx-background-color: linear-gradient(#CCCC88, #AAAA66);
+}
+
+.tab-label {
+    -fx-font-weight: bold;
+
+}
+
+.tab-pane:top {
+    -fx-background-color: linear-gradient(#CCCC88, #AAAA66);
+
+}
+
+.text-field {
+
+    -fx-background-color: #EEDDCC;
+    -fx-background-radius: 0.0px 0.0px 0.0px 0.0px;
+
+}
+
+.button {
+    -fx-effect: dropshadow(three-pass-box, black, 5.0, 0.0, 2.0, 2.0);
+    -fx-background-color: #e5bf72;
+    -fx-text-fill: #661100;
+    -fx-text-decoration: none;
+    -fx-text-align: center;
+    -fx-background-radius: 0.0px 0.0px 0.0px 0.0px;
+    -fx-display: block;
+    -fx-text-transform: uppercase;
+    -fx-border: 0px none;
+    -fx-outline: 0px none;
+}
+
+.button:hover {
+    -fx-background-color: #DDCCAA;
+}

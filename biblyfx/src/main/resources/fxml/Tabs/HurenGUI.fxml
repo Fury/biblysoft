@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<AnchorPane id="AnchorPane" fx:id="verhuurPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0"
+            prefHeight="373.0" prefWidth="974.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.VergaderruimteController">
+    <children>
+        <Label layoutX="217.0" layoutY="52.0" text="Naam:"/>
+        <Label layoutX="216.0" layoutY="80.0" text="Voornaam:"/>
+        <Label layoutX="217.0" layoutY="111.0" text="Email:"/>
+        <Label layoutX="217.0" layoutY="138.0" text="Gsm nummer:"/>
+        <Label layoutX="528.0" layoutY="215.0" text="Datum:"/>
+        <Label layoutX="211.0" layoutY="189.0" text="Aantal personen:"/>
+        <Label layoutX="528.0" layoutY="52.0" text="Straat:"/>
+        <Label layoutX="528.0" layoutY="80.0" text="Nummer:"/>
+        <Label layoutX="528.0" layoutY="111.0" text="Gemeente:"/>
+        <Button layoutX="442.0" layoutY="299.0" mnemonicParsing="false" text="Aanmaken"/>
+        <Label layoutX="528.0" layoutY="141.0" text="Postcode:"/>
+        <TextField fx:id="txtNaam" id="txtNaam" layoutX="349.0" layoutY="46.0" prefWidth="150.0"/>
+        <TextField fx:id="txtVoornaam" id="txtVoornaam" layoutX="349.0" layoutY="75.0" prefWidth="150.0"/>
+        <TextField fx:id="txtEmail" id="txtEmail" layoutX="349.0" layoutY="105.0" prefWidth="150.0"/>
+        <TextField fx:id="txtGsm" id="txtGsm" layoutX="349.0" layoutY="135.0" prefWidth="150.0"/>
+        <TextField fx:id="txtAantal" layoutX="344.0" layoutY="186.0" prefWidth="150.0"/>
+        <TextField fx:id="txtStraat" layoutX="614.0" layoutY="46.0" prefWidth="150.0"/>
+        <TextField fx:id="txtNummer" layoutX="614.0" layoutY="75.0" prefWidth="150.0"/>
+        <TextField fx:id="txtGemeente" layoutX="614.0" layoutY="105.0" prefWidth="150.0"/>
+        <TextField fx:id="txtPostcode" layoutX="614.0" layoutY="138.0" prefWidth="150.0"/>
+        <Label layoutX="528.0" layoutY="186.0" text="Ruimte:"/>
+        <Button layoutX="540.0" layoutY="299.0" mnemonicParsing="false" text="Print"/>
+        <ComboBox id="zaalL" fx:id="zaalLijst" layoutX="614.0" layoutY="185.0" prefHeight="21.0" prefWidth="150.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Item 1"/>
+                    <String fx:value="Item 2"/>
+                    <String fx:value="Item 3"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <HBox fx:id="hiredate" layoutX="614.0" layoutY="213.0" prefHeight="21.0" prefWidth="150.0"/>
+    </children>
+    <stylesheets>
+        <URL value="@../../styles/styles.css"/>
+    </stylesheets>
+</AnchorPane>

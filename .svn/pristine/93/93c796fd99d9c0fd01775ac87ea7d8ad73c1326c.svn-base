@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="981.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.BeheerCDController">
+  <children>
+    <Button layoutX="122.0" layoutY="261.0" mnemonicParsing="false" onAction="#zoekCD" text="Zoek CD" />
+    <Label layoutX="122.0" layoutY="79.0" prefHeight="17.0" prefWidth="92.0" text="CD nummer:" />
+    <TextField fx:id="txtNummer" layoutX="122.0" layoutY="105.0" prefWidth="262.0" />
+    <Label layoutX="122.0" layoutY="149.0" prefHeight="17.0" prefWidth="31.0" text="Titel:" />
+    <Label layoutX="122.0" layoutY="173.0" prefHeight="17.0" prefWidth="43.0" text="Genre:" />
+    <Label layoutX="122.0" layoutY="198.0" prefHeight="17.0" prefWidth="75.0" text="Uitgavejaar:" />
+    <Label layoutX="122.0" layoutY="224.0" prefHeight="17.0" prefWidth="57.0" text="Uitgever:" />
+    <Button id="beheerKnop" layoutX="438.0" layoutY="151.0" mnemonicParsing="false" onAction="#CDToevoegen" prefHeight="92.9609375" prefWidth="135.0" text="Nieuwe CD toevoegen" textAlignment="CENTER" wrapText="true" />
+    <Button id="beheerKnop" layoutX="726.0" layoutY="151.0" mnemonicParsing="false" onAction="#CDVerwijderen" prefHeight="92.9609375" prefWidth="135.0" text="CD verwijderen" />
+    <Button id="beheerKnop" layoutX="582.0" layoutY="151.0" mnemonicParsing="false" onAction="#CDAanpassen" prefHeight="92.9609375" prefWidth="135.0" text="CD aanpassen" />
+    <Button layoutX="931.0" layoutY="16.0" minWidth="26.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="35.0" text="X" />
+    <Label id="LblTitel" fx:id="lblTitel" layoutX="236.0" layoutY="150.0" text="" />
+    <Label id="LblGenre" fx:id="lblGenre" layoutX="218.0" layoutY="174.0" text="" />
+    <Label id="LblUitgaveJaar" fx:id="lblJaar" layoutX="219.0" layoutY="194.0" text="" />
+    <Label id="LblUitgever" fx:id="lblUitgever" layoutX="219.0" layoutY="223.0" text="" />
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

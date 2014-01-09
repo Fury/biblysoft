@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import java.net.URL?>
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="373.0"
+            prefWidth="974.0" styleClass="achtergrond" fx:id="incheckenGUI" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="org.biblyfx.controllers.IncheckController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="237.0" layoutX="375.0" layoutY="68.0"
+                   stroke="BLACK" strokeType="INSIDE" width="224.0"/>
+        <ImageView fx:id="logo" fitHeight="67.0" fitWidth="89.33333333333333" layoutX="14.0" layoutY="14.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <Label layoutX="433.0" layoutY="107.0" prefWidth="109.0" text="Artikelnummer:"/>
+        <TextField fx:id="boekID" layoutX="387.0" layoutY="128.0" prefWidth="200.0"/>
+        <Label layoutX="448.0" layoutY="170.0" prefWidth="79.0" text="Beschadigd:"/>
+        <RadioButton fx:id="beschadigd" layoutX="448.0" layoutY="199.0" mnemonicParsing="false" text="ja"/>
+        <RadioButton fx:id="nietBeschadigd" layoutX="448.0" layoutY="222.0" mnemonicParsing="false"
+                     text="neen"/>
+        <Button layoutX="450.0" fx:id="Inchecken" layoutY="260.0" mnemonicParsing="false" text="Inchecken"
+                onAction="#inchecken"/>
+    </children>
+    <stylesheets>
+        <URL value="@../../styles/styles.css"/>
+    </stylesheets>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="973.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.BeheerStatistiekController">
+  <children>
+    <AnchorPane fx:id="statistiekStage" layoutX="517.0" layoutY="53.0" prefHeight="300.0" prefWidth="400.0" />
+    <Button fx:id="btnBack" layoutX="917.0" layoutY="17.0" mnemonicParsing="false" onAction="#goBack" text="X" />
+    <Label layoutX="41.0" layoutY="38.0" prefWidth="160.0" text="Grootste lezer per genre" />
+    <Label layoutX="41.0" layoutY="199.0" prefWidth="160.0" text="Aantal uitleningen" />
+    <Label layoutX="41.0" layoutY="135.0" prefWidth="160.0" text="Aantal leden" />
+    <Label layoutX="41.0" layoutY="168.0" prefWidth="160.0" text="Leden per leeftijd" />
+    <Button layoutX="213.0" layoutY="36.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#GrootsteLezerPerGenre" prefWidth="110.0" text="Tabel" />
+    <Label layoutX="41.0" layoutY="231.0" prefWidth="160.0" text="Uitleningen per genre" />
+    <Label layoutX="41.0" layoutY="70.0" prefWidth="160.0" text="Aantal boeken per genre" />
+    <Label layoutX="41.0" layoutY="101.0" prefWidth="160.0" text="Aantal CD's per genre" />
+    <Button layoutX="213.0" layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BoekenPerGenrePieChart" prefWidth="110.0" text="Taartdiagram" />
+    <Button layoutX="213.0" layoutY="99.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#CdsPerGenrePieChart" prefWidth="110.0" text="Taartdiagram" />
+    <Button layoutX="213.0" layoutY="166.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AantalLedenPerLeeftijdBarChart" prefWidth="110.0" text="Staafdiagram" />
+    <Button layoutX="213.0" layoutY="229.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AantalUitleningenPerGenreBarChart" prefWidth="110.0" text="Taartdiagram" />
+    <Button layoutX="213.0" layoutY="133.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AantalLedenPerTijd" prefWidth="110.0" text="Tijdslijn" />
+    <Button layoutX="213.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AantalUitleningenPerTijdLineChart" prefWidth="110.0" text="Tijdslijn" />
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

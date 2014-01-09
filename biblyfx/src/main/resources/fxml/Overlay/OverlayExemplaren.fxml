@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="981.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TableView layoutX="391.0" layoutY="53.0" prefHeight="301.0" prefWidth="520.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="122.0" text="ExemplaarID" fx:id="exemplaarID" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="107.0" text="ItemID" fx:id="itemID" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="142.0" text="Datum Uitgeleend" fx:id="datumUitgeleend" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="157.0" text="Datum binnengebracht" fx:id="datumBinnengebracht" />
+      </columns>
+    </TableView>
+    <Button layoutX="939.0" layoutY="19.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="28.0" text="X" />
+    <ListView id="exemplaten" fx:id="exemplaren" layoutX="38.0" layoutY="53.0" prefHeight="301.0" prefWidth="272.0" />
+  </children>
+</AnchorPane>

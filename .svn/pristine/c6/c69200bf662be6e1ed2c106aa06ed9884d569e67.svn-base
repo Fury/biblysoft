@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.InloggenController">
+  <center>
+    <StackPane fx:id="logInStackPaneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="972.0">
+      <BorderPane>
+        <center>
+          <AnchorPane>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="211.0" layoutX="340.0" layoutY="145.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+            <Label layoutX="386.0" layoutY="178.0" text="Username:" />
+            <Label layoutX="386.0" layoutY="234.0" text="Wachtwoord:" />
+            <TextField fx:id="UsernameField" layoutX="386.0" layoutY="201.0" prefWidth="200.0" />
+            <Button id="Login" fx:id="Inloggen" layoutX="386.0" layoutY="307.0" mnemonicParsing="false" onAction="#login" prefWidth="71.0" text="Inloggen" />
+            <Button id="Cancel" fx:id="Annuleer" layoutX="518.0" layoutY="307.0" mnemonicParsing="false" onAction="#shutdown" text="Annuleer" />
+            <PasswordField fx:id="wachtwoord" layoutX="386.0" layoutY="256.0" prefWidth="200.0" />
+          </AnchorPane>
+        </center>
+        <stylesheets>
+          <URL value="@../styles/styles.css" />
+        </stylesheets>
+      </BorderPane>
+    </StackPane>
+  </center>
+</BorderPane>

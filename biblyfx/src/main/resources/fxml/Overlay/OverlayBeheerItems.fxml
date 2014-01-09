@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.URL?>
+<AnchorPane prefHeight="381.0" prefWidth="981.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.BeheerItemsController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button id="beheerKnop" layoutX="196.0" layoutY="144.0" mnemonicParsing="false" onAction="#showBoekenBeheer" prefHeight="92.9609375" prefWidth="135.0" text="Boeken beheren" />
+    <Button id="beheerKnop" layoutX="344.0" layoutY="144.0" mnemonicParsing="false" onAction="#showCDBeheer" prefHeight="92.9609375" prefWidth="135.0" text="CD's beheren" />
+    <Button id="beheerKnop" layoutX="491.0" layoutY="144.0" mnemonicParsing="false" onAction="#showDVDBeheer" prefHeight="92.9609375" prefWidth="135.0" text="DVD's beheren" />
+    <Button layoutX="931.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="28.0" text="X" />
+      <Button id="beheerKnop" layoutX="639.0" layoutY="144.0" mnemonicParsing="false" prefHeight="92.9609375"
+              prefWidth="135.0" text="Excel invoeren" onAction="#importexcel"/>
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

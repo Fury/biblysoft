@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="373.0" prefWidth="974.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.items.ZoekBoekController">
+  <children>
+    <Pane layoutX="0.0" layoutY="5.0" prefHeight="373.0" prefWidth="974.0">
+      <children>
+        <TableView fx:id="boekenListTable" layoutX="286.0" layoutY="23.0" prefHeight="332.0" prefWidth="674.0" styleClass="table">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="ID" fx:id="id" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="186.0" text="Titel" fx:id="titel" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="88.0" text="Genre" fx:id="genre" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="139.0" text="Uitgave jaar" fx:id="uitgaveJaar" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="88.0" text="Uitgever" fx:id="uitgever" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="88.0" text="Type" fx:id="type" />
+          </columns>
+        </TableView>
+        <Pane layoutX="4.0" layoutY="7.0" prefHeight="360.0" prefWidth="256.0">
+          <children>
+            <Label layoutX="31.0" layoutY="76.0" prefWidth="200.0" text="Titel Boek" />
+            <Label layoutX="31.0" layoutY="163.0" prefWidth="200.0" text="Genre" />
+            <Label layoutX="31.0" layoutY="206.0" prefWidth="200.0" text="Jaar van uitgave" />
+            <Label layoutX="31.0" layoutY="250.0" prefWidth="200.0" text="Uitgeverij" />
+            <TextField fx:id="zoekenUitgeverij" layoutX="31.0" layoutY="266.0" prefWidth="200.0" />
+            <TextField fx:id="zoekenJaar" layoutX="31.0" layoutY="222.0" prefWidth="200.0" />
+            <TextField fx:id="zoekenGenre" layoutX="31.0" layoutY="179.0" prefWidth="200.0" />
+            <TextField fx:id="zoekenTitel" layoutX="31.0" layoutY="92.0" prefWidth="200.0" />
+            <Button id="buttonPrint" fx:id="zoekenKnop" layoutX="97.0" layoutY="307.0" onAction="#zoekItems" text="Zoeken" />
+            <Separator layoutX="255.0" layoutY="33.0" minWidth="2.0001220703125" orientation="VERTICAL" prefHeight="302.0" prefWidth="2.0001220703125" />
+            <Label layoutX="31.0" layoutY="120.0" prefWidth="200.0" text="Auteur" />
+            <TextField id="zoekenGenre" layoutX="31.0" layoutY="136.0" prefWidth="200.0" />
+            <Label layoutX="31.0" layoutY="34.0" prefWidth="200.0" text="ISBN" />
+            <TextField id="zoekenTitel" layoutX="31.0" layoutY="50.0" prefWidth="200.0" />
+          </children>
+        </Pane>
+        <Button id="btnBack" layoutX="917.0" layoutY="17.0" mnemonicParsing="false" onAction="#goBack" text="X" />
+      </children>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="981.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.BeheerDVDAanpassenController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="260.0" layoutX="294.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="393.0" />
+    <Label layoutX="349.0" layoutY="84.0" text="Titel:" />
+    <Label layoutX="348.0" layoutY="237.0" text="speelduur:" />
+    <Label layoutX="347.0" layoutY="134.0" text="Uitgever:" />
+    <Label layoutX="347.0" layoutY="109.0" text="Genre:" />
+    <Label layoutX="347.0" layoutY="187.0" text="Taal:" />
+    <Label layoutX="347.0" layoutY="161.0" text="Uitgavejaar:" />
+    <Label layoutX="347.0" layoutY="211.0" text="Minimun leeftijd:" />
+    <TextField fx:id="txtTitel" layoutX="457.0" layoutY="81.0" prefWidth="200.0" />
+    <TextField fx:id="txtSpeelduur" layoutX="456.0" layoutY="234.0" prefWidth="200.0" />
+    <TextField fx:id="txtGenre" layoutX="456.0" layoutY="106.0" prefWidth="200.0" />
+    <TextField fx:id="txtUitgever" layoutX="456.0" layoutY="131.0" prefWidth="200.0" />
+    <TextField fx:id="txtJaar" layoutX="456.0" layoutY="158.0" prefWidth="200.0" />
+    <TextField fx:id="txtTaal" layoutX="456.0" layoutY="183.0" prefWidth="200.0" />
+    <TextField id="txtLee" fx:id="txtminLeeftijd" layoutX="456.0" layoutY="208.0" prefWidth="200.0" />
+    <Button fx:id="dvdAanpassen" layoutX="353.0" layoutY="273.0" mnemonicParsing="false" onAction="#dvdAanpassen" text="Aanpassen" />
+    <Button fx:id="goBack" layoutX="529.0" layoutY="273.0" mnemonicParsing="false" onAction="#goBack" text="Annuleren" />
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import java.net.URL?>
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="373.0" prefWidth="974.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.LidAanpassenController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="345.9999694824219" layoutX="253.0" layoutY="13.0"
+                   stroke="BLACK" strokeType="INSIDE" styleClass="achtergrond" width="468.0000915527344"/>
+        <Label layoutX="311.0" text="Voornaam:" AnchorPane.topAnchor="51.0"/>
+        <Label layoutX="311.0" layoutY="76.0" text="Naam:"/>
+        <Label layoutX="311.0" layoutY="181.0" text="Email:"/>
+        <Label layoutX="311.0" layoutY="208.0" text="Straat:"/>
+        <Label layoutX="311.0" layoutY="232.0" text="Huisnummer:"/>
+        <Label layoutX="311.0" layoutY="257.0" text="Gemeente"/>
+        <Label layoutX="311.0" layoutY="284.0" text="Postcode"/>
+        <Label layoutX="311.0" layoutY="101.0" text="Geboortedatum:"/>
+        <Label layoutX="311.0" layoutY="127.0" text="Telefoon:"/>
+        <Label layoutX="311.0" layoutY="154.0" text="Gsm:"/>
+        <Button id="btnAanmakenAanpassen" fx:id="btnAanpassen" layoutX="311.0" layoutY="315.0" mnemonicParsing="false"
+                onAction="#aanpassingenOpslaan" prefWidth="89.0" text="Aanpassen"/>
+        <Button fx:id="btnAnnuleren" layoutX="528.0" layoutY="315.0" mnemonicParsing="false" onAction="#goBack"
+                text="Annuleren"/>
+        <TextField id="txtVoornamm" fx:id="txtVoornaam" layoutX="443.0" prefWidth="232.0"
+                   AnchorPane.bottomAnchor="304.0" AnchorPane.topAnchor="47.0"/>
+        <TextField fx:id="txtNaam" layoutX="443.0" layoutY="71.0" prefWidth="232.0"/>
+        <TextField fx:id="txtTelefoon" layoutX="443.0" layoutY="122.0" prefWidth="232.0"/>
+        <TextField fx:id="txtGsm" layoutX="443.0" layoutY="149.0" prefWidth="232.0"/>
+        <TextField fx:id="txtEmail" layoutX="443.0" layoutY="176.0" prefWidth="232.0"/>
+        <TextField fx:id="txtStraat" layoutX="443.0" layoutY="203.0" prefWidth="232.0"/>
+        <TextField id="txtGemmente" fx:id="txtGemeente" layoutX="443.0" layoutY="254.0" prefWidth="232.0"/>
+        <TextField id="txtHuisnummer" fx:id="txtNummer" layoutX="443.0" layoutY="228.0" prefWidth="102.0"/>
+        <TextField fx:id="txtPostcode" layoutX="443.0" layoutY="279.0" prefWidth="232.0"/>
+        <Label layoutX="554.0" layoutY="232.0" text="Bus:"/>
+        <TextField fx:id="txtBus" layoutX="590.0" layoutY="228.0" prefWidth="84.0"/>
+        <HBox fx:id="hboxGeboortedatum" layoutX="443.0" layoutY="97.0" prefHeight="21.0" prefWidth="232.0"/>
+    </children>
+    <stylesheets>
+        <URL value="@../../styles/styles.css"/>
+    </stylesheets>
+</AnchorPane>

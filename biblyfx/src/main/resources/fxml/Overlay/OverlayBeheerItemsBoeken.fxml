@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="981.0" styleClass="achtergrond" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.biblyfx.controllers.BeheerBoekenController">
+  <children>
+    <Button layoutX="50.0" layoutY="261.0" mnemonicParsing="false" onAction="#zoekBoek" text="Zoek boek" />
+    <Label layoutX="50.0" layoutY="79.0" text="Boek nummer:" />
+    <TextField fx:id="txtNummer" layoutX="50.0" layoutY="105.0" prefWidth="262.0" />
+    <Label layoutX="50.0" layoutY="149.0" text="Titel:" />
+    <Label layoutX="50.0" layoutY="173.0" text="Genre:" />
+    <Label layoutX="50.0" layoutY="198.0" text="Uitgavejaar:" />
+    <Label layoutX="50.0" layoutY="224.0" text="Uitgever:" />
+    <Button id="beheerKnop" layoutX="469.0" layoutY="149.0" mnemonicParsing="false" onAction="#BoekToevoegen" prefHeight="92.9609375" prefWidth="135.0" text="Nieuw boek toevoegen" textAlignment="CENTER" wrapText="true" />
+    <Button id="beheerKnop" layoutX="759.0" layoutY="149.0" mnemonicParsing="false" onAction="#BoekVerwijderen" prefHeight="92.9609375" prefWidth="135.0" text="Boek verwijderen" />
+    <Button id="beheerKnop" layoutX="615.0" layoutY="149.0" mnemonicParsing="false" onAction="#BoekAanpassen" prefHeight="92.9609375" prefWidth="135.0" text="Boek aanpassen" />
+    <Button layoutX="916.0" layoutY="31.0" minWidth="26.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="35.0" text="X" />
+    <Label id="LblTitel" fx:id="lblTitel" layoutX="164.0" layoutY="153.0" text="" />
+    <Label id="LblGenre" fx:id="lblGenre" layoutX="161.0" layoutY="176.0" text="" />
+    <Label id="LblUitgaveJaar" fx:id="lblJaar" layoutX="161.0" layoutY="202.0" text="" />
+    <Label id="LblUitgever" fx:id="lblUitgever" layoutX="161.0" layoutY="228.0" text="" />
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>
